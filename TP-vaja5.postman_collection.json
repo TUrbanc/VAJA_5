@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "af033421-deeb-4d7a-b5d1-b3e0439ad896",
+		"name": "TP-vaja5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30765853"
+	},
+	"item": [
+		{
+			"name": "val202",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/onair/val202",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"onair",
+						"val202"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getArso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/weather/getArso",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"weather",
+						"getArso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/misc/time",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"misc",
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "avto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/poll/getPoll?client_id=3b65b591fa6fd2349839c9f811c19bc2&sectionId=31",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"poll",
+						"getPoll"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "3b65b591fa6fd2349839c9f811c19bc2"
+						},
+						{
+							"key": "sectionId",
+							"value": "31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ocena",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/news/setRating/686870?&client_id=3b65b591fa6fd2349839c9f811c19bc2&language=sl&rating=5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"news",
+						"setRating",
+						"686870"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "client_id",
+							"value": "3b65b591fa6fd2349839c9f811c19bc2"
+						},
+						{
+							"key": "language",
+							"value": "sl"
+						},
+						{
+							"key": "rating",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlockNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_blockNumber\",\r\n    \"params\": [],\r\n    \"id\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://mainnet.infura.io/v3/0bb380ad1c934961b2c0f1f3de75c59a",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"infura",
+						"io"
+					],
+					"path": [
+						"v3",
+						"0bb380ad1c934961b2c0f1f3de75c59a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBlockByNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByNumber\",\r\n    \"params\": [\r\n        \"0x11acf47\",\r\n        true\r\n    ],\r\n    \"id\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://mainnet.infura.io/v3/0bb380ad1c934961b2c0f1f3de75c59a",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"infura",
+						"io"
+					],
+					"path": [
+						"v3",
+						"0bb380ad1c934961b2c0f1f3de75c59a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
